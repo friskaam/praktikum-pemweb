@@ -1,0 +1,198 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-img {
+    background-image: url('img/uwks-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content-wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 24px;
+    max-width: fit-content;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    font-size: 16px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    font-weight: 600;
+    gap: 8px;
+    font-size: 32px;
+}
+
+.sub-title {
+    font-size: 24px;
+}
+
+input:focus,
+textarea {
+    outline: none;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+textarea {
+    font-size: 16px;
+    color: #000;
+    padding: 8px;
+}
+
+.box {
+    width: 333px;
+    border-radius: 8px;
+    border: 1px solid #989898;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.name,
+.date,
+.npm,
+.gender {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.genders {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.male:hover,
+.female:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.male {
+    width: 150px;
+    border-radius: 8px;
+    border: 1px solid #989898;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 11px;
+    gap: 21px;
+    align-items: center;
+}
+
+.female {
+    width: 165px;
+    border-radius: 8px;
+    border: 1px solid #989898;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 11px;
+    gap: 21px;
+    align-items: center;
+}
+
+.form {
+    width: 719px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px 53px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.buttons {
+    margin-top: 16px;
+    width: 719px;
+    font-size: 16px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: #989898;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.buttons:hover {
+    border: none;
+    background-color: tomato;
+    color: #fff;
+}
+
+@media (max-width: 1128px) {
+    .content {
+        margin: 0 auto;
+    }
+    .content-wrapper {
+        padding: 16px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .male,
+    .female,
+    .gender,
+    .date,
+    .button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .buttons {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .genders {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 685px) {
+    .main-title {
+        font-size: 18px;
+        text-align: center;
+    }
+    .sub-title {
+        font-size: 14px;
+        text-align: center;
+    }
+}

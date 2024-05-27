@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>Form Input</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"/>
+</head>
+<body>
+    <div class="bg-img">
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="title">
+                    <div class="main-title">FORM PENGISIAN MATA KULIAH PILIHAN</div>
+                    <div class="sub-title">UNIVERSITAS WIJAYA KUSUMA SURABAYA</div>
+                </div>
+                <form class="form" action="process.php" method="post">
+                    <div class="date">
+                        <label for="nama" class="label">Nama</label>
+                        <input type="text" id="nama" name="nama" class="box">
+                    </div>
+                    <div class="date">
+                        <label for="tanggal" class="label">Tanggal</label>
+                        <input type="date" id="tanggal" name="tanggal" class="box">
+                    </div>
+                    <div class="date">
+                        <label for="npm" class="label">NPM</label>
+                        <input type="text" id="npm" name="npm" class="box">
+                    </div>
+                    <div class="gender">
+                        <label for="jenis-kelamin">Jenis Kelamin</label>
+                        <div class="genders">
+                            <div class="male">
+                                <input type="radio" id="male" name="jenis-kelamin" value="Laki - Laki">
+                                <label for="male">Laki - Laki</label>
+                            </div>
+                            <div class="female">
+                                <input type="radio" id="female" name="jenis-kelamin" value="Perempuan">
+                                <label for="female">Perempuan</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date">
+                        <label for="fakultas" class="label">Fakultas</label>
+                        <input type="text" id="fakultas" name="fakultas" class="box">
+                    </div>
+                    <div class="date">
+                        <label for="no-telepon" class="label">No. Telepon</label>
+                        <input type="text" id="no-telepon" name="no-telepon" class="box">
+                    </div>
+                    <div class="date">
+                        <label for="program-studi" class="label">Program Studi</label>
+                        <input type="text" id="program-studi" name="program-studi" class="box">
+                    </div>
+                    <div class="date">
+                        <label for="email" class="label">Email</label>
+                        <input type="email" id="email" name="email" class="box">
+                    </div>
+                    <div class="date">
+                        <label for="mata-kuliah" class="label">Mata Kuliah</label>
+                        <input type="text" id="mata-kuliah" name="mata-kuliah" class="box">
+                    </div>
+                    <div class="date">
+                        <label for="alamat" class="label">Alamat</label>
+                        <textarea name="alamat" class="box"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="buttons">Submit</button>
+                        <button type="reset" class="buttons">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
